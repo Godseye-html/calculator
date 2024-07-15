@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<!-- goggle fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<!-- fontawesome -->
+<script src="https://kit.fontawesome.com/cd048bfb5b.js" crossorigin="anonymous"></script>
+<!-- css -->
+<link rel="stylesheet" href="./style.css">
+
+<body>
+    <div class="full-body-of-calc">
+        <!-- head -->
+        <div class="nav">
+            <div class="left-section">
+                <img height="15px" width="14px" src="./20220430105224!Windows_Calculator_icon.png" alt="halo sir">
+                <h5 class="text">Calculator</h5>
+            </div>
+            <div class="right-section">
+                <button class="nav-minimise"><i class="fa-solid fa-minus fa-sm" style="color: #ffffff;"></i></button>
+                <button class="nav-full"><i class="fa-regular fa-square fa-xs" style="color: #ffffff;"></i></button>
+                <button class="nav-cut"><i class="fa-solid fa-xmark fs-2xl" style="color: #ffffff;"></i></button>
+            </div>
+        </div>
+        <header>
+            <nav class="groups-in-heading">
+                <button class="toggle-btn"><i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i></button>
+                <h3>Standard</h3>
+                <button class="size-toggle-btn"><i class="fa-regular fa-window-restore fa-lg"></i></button>
+            </nav>
+            <button class="history"><i class="fa-solid fa-clock-rotate-left fa-lg" style="color: #ffffff;"></i></button>
+        </header>
+        <!-- output -->
+        <div class="result">
+            <div class="firstplace"></div>
+            <div class="secondplace">0</div>
+        </div>
+        <main class="number-body">
+            <article>
+                <div class="memory-section">
+                    <button class="memory">MC</button>
+                    <button class="memory">MR</button>
+                    <button class="memory">M+</button>
+                    <button class="memory">M-</button>
+                    <button class="memory">MS</button>
+                    <button class="memory">M <i class="fa-solid fa-angle-down fa-xs"
+                            style="color: #ffffff;position: relative;top: 2px;"></i></button>
+                </div>
+                <!-- number -->
+                <!-- 1st row -->
+                <p class="grid-number">
+                    <button class="symbol percent operator">%</button>
+                    <button class="symbol clear-effecient">CE</button>
+                    <button class="symbol clear-all">C</button>
+                    <button class="symbol clear-one"><i class="fa-solid fa-delete-left fa-xs"
+                            style="color: #ffffff;"></i></button>
+                    <!-- 2nd row -->
+                    <button class="operator one-divison"><sup >1</sup>/<sub class="x"
+                            style="margin-left: 2px;font-size: 18px;">x</sub></button>
+                    <button class="operator square"><span class="x"
+                            style="margin-right:5px;">x</span><sup>2</sup></button>
+                    <button class="operator two-root"><sup
+                            style="position:relative;bottom:4px;right:-5px;">2</sup><i
+                            class=" fa-solid fa-square-root-variable " style="color: #ffffff;"></i></button>
+                    <button class="operator divide"><i class="fa-solid fa-divide"
+                            style="color: #ffffff;"></i></button>
+                    <!-- 3rd row -->
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operator multiply"><i class="fa-solid fa-xmark"
+                            style="color: #ffffff;"></i></button>
+                    <!-- 4th row -->
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operator minus"><i class="fa-solid fa-minus"
+                            style="color: #ffffff;"></i></button>
+                    <!-- 5th row -->
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operator plus"><i class="fa-solid fa-plus"
+                            style="color: #ffffff;"></i></button>
+                    <!-- 6th row -->
+                    <button class="plus-minus"><sup><i class="fa-solid fa-plus fa-2xs"
+                                style="color: #ffffff;"></i></sup>/<sub><i class="fa-solid fa-minus fa-2xs"
+                                style="color: #ffffff;"></i></sub></button>
+                    <button class="number">0</button>
+                    <button class="dot">.</button>
+                    <button class="equal"><i class="fa-solid fa-equals" style="color: #000000;"></i></button>
+                </p>
+            </article>
+        </main>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>

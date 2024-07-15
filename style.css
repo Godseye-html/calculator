@@ -1,0 +1,177 @@
+* {
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --font-size:0px;
+}
+button {
+    background: #202020;
+    border: none;
+}
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    display: grid;
+    place-items: center;
+}
+.full-body-of-calc {
+    background: #202020;
+    border-radius:7px;
+    overflow: hidden;
+    outline:.1px solid #333333;
+    outline-offset: -1px;
+}
+header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 12px;
+}
+.nav {
+    display: grid;
+    grid-template-columns: 57.5% 42.5%;
+    height: 31.5px;
+    min-width: 127.4px;
+    margin-bottom: 13px;
+}
+.left-section {
+    display: grid;
+    max-height: 31.5px;
+    grid-template-columns: 15% 85%;
+    align-items: center;
+    margin-left: 14px;
+    font-size: 19.3px;
+    letter-spacing: 0.2px;
+    font-family: "Lucida Grande", Arial, sans-serif;
+    font-weight: 100;
+}
+.text {
+    margin-left: 7px;
+    cursor: default;
+}
+.right-section {
+    display: grid;
+    height: 31.5px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border-top-right-radius: 7px;
+}
+.right-section > button {
+    min-height: 100%;
+}
+.nav-minimise:hover,
+.nav-full:hover {
+    background: #434343;
+    color: white;
+}
+.nav-cut:hover {
+    background: #c42b1c;
+    color: white;
+}
+.groups-in-heading {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.8rem;
+    align-items: center;
+    min-height: 30px;
+}
+h3 {
+    margin-bottom: 1.2px;
+    font-weight: 500;
+    font-size: 21px;
+    cursor: default;
+}
+.result {
+    min-height: 92.5px;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    justify-items: end;
+    margin:0px 20px 0px 14px;
+    align-content: center;
+    overflow:hidden;
+    align-items: end;
+}
+.secondplace {
+    max-width: 289px;
+    font-size:calc(47px - var(--font-size));
+}
+.firstplace {
+    max-width: 289px;
+    font-size: 18px;
+    letter-spacing: 1.9px;
+}
+.memory-section {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    min-height: 30px;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.memory-section > button {
+    min-width: 50px;
+    min-height: 100%;
+}
+.memory-section > button:hover,
+.symbol:hover {
+    background: #3c3c3c;
+    border-radius: 2.5px;
+}
+.history {
+    min-height: 30px;
+    aspect-ratio: 1/1;
+    display: grid;
+    place-content: center;
+    border-radius: 5px;
+    transition: background 0.1s 0.1s;
+}
+.history:hover {
+    background: #3c3c3c;
+}
+button.number:hover,
+.plus-divide-minus:hover,
+.dot:hover {
+    background: #323232;
+}
+.grid-number {
+    display: grid;
+    grid-template-columns: repeat(4, 77.5px);
+    grid-template-rows: auto;
+    gap: 0.15rem;
+    min-height: 237px;
+    margin:0px 2.8px 2.8px 2.8px;
+}
+p > button {
+    background: #3c3c3c;
+    font-size: 18px;
+    border-radius: 5px;
+    height: 46.8px;
+}
+.symbol {
+    background: #323232;
+}
+sup,
+sub {
+    min-width: 10px;
+    aspect-ratio: 1/1;
+}
+.equal:hover {
+    color: black;
+    background: #68c1c8;
+}
+.equal {
+    background: #72f3ff;
+    color: black;
+}
+.dot,
+.plus-divide-minus {
+    background: #3c3c3c;
+}
+.dot:hover,
+.plus-divide-minus:hover {
+    background: #323232;
+}
